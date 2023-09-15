@@ -19,9 +19,9 @@ endif
 all: build
 
 docker_build: 
-	docker buildx build --platform linux/amd64 --pull -f Dockerfile -t ${DOCKER_IMAGE_NAME} --load ./
+	docker buildx build --platform linux/amd64 -f Dockerfile -t ${DOCKER_IMAGE_NAME} --load ./
 docker_publish: 
-	docker buildx build --platform linux/amd64 --pull -f Dockerfile -t ${DOCKER_IMAGE_NAME} --push ./
+	docker buildx build --platform linux/amd64 -f Dockerfile -t ${DOCKER_IMAGE_NAME} --push ./
 
 build: docker_build measurement
 
