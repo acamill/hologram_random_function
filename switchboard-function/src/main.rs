@@ -44,11 +44,11 @@ async fn main() {
         program_id: params.program_id,
         data: ixn_data,
         accounts: vec![
-            AccountMeta::new_readonly(params.user, false),
             AccountMeta::new_readonly(runner.signer, true),
+            AccountMeta::new_readonly(params.user, false),
             AccountMeta::new_readonly(params.realm_pda, false),
             AccountMeta::new_readonly(params.user_account_pda, false),
-            AccountMeta::new_readonly(params.spaceship_pda, false),
+            AccountMeta::new(params.spaceship_pda, false),
             AccountMeta::new_readonly(runner.function, false),
             AccountMeta::new_readonly(runner.function_request_key.unwrap(), false),
         ],

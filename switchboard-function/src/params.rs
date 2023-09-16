@@ -91,7 +91,7 @@ mod tests {
             "PID={},LOWER_BOUND={},UPPER_BOUND={},USER={},REALM_PDA={},USER_ACCOUNT_PDA={},SPACESHIP_PDA={}",
             anchor_spl::token::ID,
             0,
-            u32::MAX,
+            18_000,
             anchor_spl::token::ID,
             anchor_spl::token::ID,
             anchor_spl::token::ID,
@@ -102,8 +102,8 @@ mod tests {
         let params = ContainerParams::decode(&request_params_bytes).unwrap();
 
         assert_eq!(params.program_id, anchor_spl::token::ID);
-        assert_eq!(params.lower_bound, hologram::RANDOMNESS_LOWER_BOUND);
-        assert_eq!(params.upper_bound, hologram::RANDOMNESS_UPPER_BOUND);
+        assert_eq!(params.lower_bound, 0);
+        assert_eq!(params.upper_bound, 18_000);
         assert_eq!(params.user, anchor_spl::token::ID);
         assert_eq!(params.realm_pda, anchor_spl::token::ID);
         assert_eq!(params.user_account_pda, anchor_spl::token::ID);
