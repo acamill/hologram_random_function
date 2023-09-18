@@ -33,8 +33,8 @@ async fn main() {
     ixn_data.append(&mut random_bytes);
 
     // ACCOUNTS:
-    // 1. User: our user who made the request
-    // 2. Enclave Signer (signer): our Gramine generated keypair
+    // 1. Enclave Signer (signer): our Gramine generated keypair
+    // 2. User: our user who made the request
     // 3. Realm
     // 4. User Account PDA
     // 5. Spaceship PDA (mut)
