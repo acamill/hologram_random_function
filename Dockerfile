@@ -7,7 +7,7 @@ COPY ./switchboard-function/src ./src/
 
 RUN cargo build --release && \
     cargo strip && \
-    mv target/release/hologram-spaceship-randomness-function /sgx/app
+    mv target/release/spaceship_seed_generation_function /sgx/app
 
 FROM switchboardlabs/sgx-function
 

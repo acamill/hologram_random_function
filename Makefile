@@ -5,7 +5,7 @@
 .PHONY: build clean publish test
 
 # Variables
-CARGO_NAME=hologram-spaceship-randomness-function # Cargo.toml name
+CARGO_NAME=spaceship_seed_generation_function # Cargo.toml name
 DOCKER_IMAGE_NAME ?= acammm/${CARGO_NAME}
 
 check_docker_env:
