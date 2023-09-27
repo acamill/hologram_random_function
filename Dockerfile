@@ -7,7 +7,7 @@ COPY ./switchboard-function/src ./src/
 
 RUN cargo build --release && \
     cargo strip && \
-    mv target/release/spaceship_seed_generation_function /sgx/app
+    mv target/release/spaceship-seed-generation-function /sgx/app
 
 FROM switchboardlabs/sgx-function
 
