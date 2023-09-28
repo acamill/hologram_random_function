@@ -1767,16 +1767,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "hologram-spaceship-randomness-function"
-version = "0.1.0"
-dependencies = [
- "bytemuck",
- "futures",
- "switchboard-solana",
- "tokio",
-]
-
-[[package]]
 name = "http"
 version = "0.2.9"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4138,6 +4128,16 @@ dependencies = [
  "scroll",
  "thiserror",
  "winapi",
+]
+
+[[package]]
+name = "spaceship-seed-generation-function"
+version = "0.1.0"
+dependencies = [
+ "bytemuck",
+ "futures",
+ "switchboard-solana",
+ "tokio",
 ]
 
 [[package]]

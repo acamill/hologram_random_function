@@ -1,12 +1,12 @@
 [workspace]
 
 [package]
-name = "hologram-spaceship-randomness-function"
+name = "spaceship-seed-generation-function"
 version = "0.1.0"
 edition = "2021"
 
 [[bin]]
-name = "hologram-spaceship-randomness-function"
+name = "spaceship-seed-generation-function"
 path = "src/main.rs"
 
 [dependencies]
