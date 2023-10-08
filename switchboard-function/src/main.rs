@@ -46,7 +46,7 @@ async fn main() {
         accounts: vec![
             AccountMeta::new_readonly(runner.signer, true),
             AccountMeta::new_readonly(params.user, false),
-            AccountMeta::new_readonly(params.realm_pda, false),
+            AccountMeta::new(params.realm_pda, false),
             AccountMeta::new(params.user_account_pda, false),
             AccountMeta::new(params.spaceship_pda, false),
             AccountMeta::new_readonly(runner.function, false),
