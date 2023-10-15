@@ -9,7 +9,7 @@ RUN --mount=type=cache,target=/usr/local/cargo/registry,id=${TARGETPLATFORM} \
     --mount=type=cache,target=target,id=${TARGETPLATFORM} \
     cargo build --release && \
     cargo strip && \
-    mv target/release/simple-randomness-function /sgx/app
+    mv target/release/spaceship-seed-generation-function /sgx/app
 
 FROM switchboardlabs/sgx-function
 
